@@ -139,7 +139,16 @@ table {
   border-spacing: 0;
 }
 
+button {
+  cursor: pointer;
+  font-weight: 700;
+}
+
 :root {
   --hover-gray: rgba(139, 149, 161, 0.1);
+  --dark-gray: #c6c6c6;
   --white-color: #fff;
+  --main-color: #516c50;
+  --sub-color: #d2e3c8;
+  --point-color: #ffd700;
 }
