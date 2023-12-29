@@ -4,14 +4,22 @@ import styled from "styled-components";
 import { FaX } from "react-icons/fa6";
 import Logo from "../../asset/Logo.png";
 import { RiKakaoTalkFill } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Mlogin() {
+  const navigate = useNavigate();
   return (
     <>
       <Header />
       <Container>
         <div className="HeaderBar">
-          <FaX className="OutIcon" />
+          <FaX
+            className="OutIcon"
+            onClick={() => {
+              navigate(-1);
+            }}
+          />
         </div>
         <div className="LoginMainBox">
           <div className="imageBox">
@@ -29,7 +37,9 @@ export default function Mlogin() {
               <RiKakaoTalkFill className="kakao" />
               카카오 로그인
             </button>
-            <div className="signUpInfo"> 맛남의 공간 회원가입</div>
+            <Link to="/SignUP">
+              <div className="signUpInfo"> 맛남의 공간 회원가입</div>
+            </Link>
           </div>
         </div>
       </Container>
@@ -45,7 +55,7 @@ const Container = styled.div`
   }
 
   .OutIcon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 15px;
   }
 
