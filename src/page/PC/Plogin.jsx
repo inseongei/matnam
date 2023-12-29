@@ -160,17 +160,17 @@ const Container = styled.div`
     border-radius: 10px 10px 0px 0px;
     border-right: 1px solid var(--dark-gray);
     background-color: ${({ menu }) =>
-      menu == "true" ? "var(--main-color)" : "var(--hover-gray)"};
-    color: ${({ menu }) => (menu == "true" ? "var(--white-color)" : "black")};
+      menu === "true" ? "var(--main-color)" : "var(--hover-gray)"};
+    color: ${({ menu }) => (menu === "true" ? "var(--white-color)" : "black")};
   }
 
   .SignUpBtn {
     border-radius: ${({ menu }) =>
-      menu == "true" ? "10px 0px 0px 0px;" : "10px 10px 0px 0px"};
+      menu === "true" ? "10px 0px 0px 0px;" : "10px 10px 0px 0px"};
     border-bottom: 1px solid var(--dark-gray);
     background-color: ${({ menu }) =>
-      menu == "true" ? "var(--hover-gray)" : "var(--main-color) "};
-    color: ${({ menu }) => (menu == "true" ? "black" : "var(--white-color) ")};
+      menu === "true" ? "var(--hover-gray)" : "var(--main-color) "};
+    color: ${({ menu }) => (menu === "true" ? "black" : "var(--white-color) ")};
   }
 
   .inputBox {
@@ -245,8 +245,5 @@ const Container = styled.div`
 
   .kakao {
     width: 30px;
-  }
-
-  .info {
   }
 `;
