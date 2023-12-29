@@ -1,14 +1,17 @@
 import React from "react";
 import { PC, Mobile } from "../responsive";
-import P_Login from "./PC/P_Login";
+import Plogin from "./PC/Plogin";
+import Mlogin from "./Mobile/Mlogin";
 
 export default function Login() {
   return (
     <>
       <PC>
-        <P_Login />
+        <Plogin />
       </PC>
-      <Mobile></Mobile>
+      <Mobile>
+        <Mlogin />
+      </Mobile>
     </>
   );
 }
