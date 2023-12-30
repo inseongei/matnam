@@ -144,6 +144,11 @@ button {
   font-weight: 700;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 :root {
   --hover-gray: rgba(139, 149, 161, 0.1);
   --dark-gray: #c6c6c6;
