@@ -93,6 +93,7 @@ const Container = styled.div`
     border-radius: 10px;
     width: 322px;
     margin: 10px;
+    color: black;
   }
   .Login {
     background-color: var(--sub-color);

@@ -57,7 +57,12 @@ export default function MSign() {
       <Header />
       <Container>
         <div className="HeaderBar">
-          <FaChevronLeft className="goBack-icon" />
+          <FaChevronLeft
+            className="goBack-icon"
+            onClick={() => {
+              navigate(-1);
+            }}
+          />
         </div>
         <div>
           <h1 className="title">
