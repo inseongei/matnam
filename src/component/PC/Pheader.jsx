@@ -52,6 +52,7 @@ const Container = styled.div`
   background-color: var(--white-color);
   border-bottom: 1px solid var(--hover-gray);
   position: fixed;
+  z-index: 1;
 
   .wrapper {
     display: flex;
