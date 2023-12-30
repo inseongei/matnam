@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaUser } from "react-icons/fa";
 import { IoHomeSharp } from "react-icons/io5";
 import { FaBookReader, FaPizzaSlice, FaShoppingCart } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 export default function M_Header() {
   const [token, setToken] = useState(null);
 
@@ -19,7 +19,9 @@ export default function M_Header() {
           <div>
             <IoHomeSharp className="menu-icon" />
           </div>
-          <div>홈</div>
+          <Link to="/">
+            <div>홈</div>
+          </Link>
         </div>
         <div className="menu-content">
           <div>
@@ -39,12 +41,15 @@ export default function M_Header() {
           </div>
           <div>쿡쇼핑</div>
         </div>
-        <div className="menu-content">
-          <div>
-            <FaUser className="menu-icon" />
+        <Link to="/Login">
+          <div className="menu-content">
+            <div>
+              <FaUser className="menu-icon" />
+            </div>
+
+            <div>로그인</div>
           </div>
-          <div>{token ? "마이페이지" : "로그인"}</div>
-        </div>
+        </Link>
       </div>
     </Container>
   );
@@ -55,7 +60,9 @@ const Container = styled.div`
   bottom: 0;
   width: 100%;
   height: 65px;
-  background-color: var(--hover-gray);
+  background-color: #fff;
+  font-weight: 700;
+  z-index: 1;
 
   .menu-bar {
     display: flex;
