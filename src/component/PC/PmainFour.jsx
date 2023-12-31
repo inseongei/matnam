@@ -64,7 +64,7 @@ export default function PmainFour() {
 
 const Container = styled.div`
   padding-top: 60px;
-  height: 60vh;
+  height: 80vh;
   width: 80%;
   margin: 0 auto;
   display: flex;

@@ -87,7 +87,4 @@ const Container = styled.div`
     height: 150px;
     cursor: pointer;
   }
-
-  .icon-logo:hover {
-  }
 `;
