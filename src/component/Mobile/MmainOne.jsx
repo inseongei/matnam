@@ -4,6 +4,7 @@ import Header from "../Header";
 import logo from "../../asset/Logo.png";
 import TypeIt from "typeit-react";
 import ScrollOut from "scroll-out";
+import Mback from "../../asset/Mback.jpeg";
 
 export default function Mmain() {
   useEffect(() => {
@@ -71,9 +72,10 @@ const Container = styled.div`
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.5;
-    background-image: linear-gradient(135deg, #fde5d2 0%, #f0feea 100%);
-    margin-top: 20px;
+    background-image: url(${Mback});
+    margin: 20px 0px;
     height: 20vh;
+    color: #fff;
   }
 
   .first-title {

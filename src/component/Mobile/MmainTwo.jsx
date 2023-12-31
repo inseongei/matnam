@@ -49,7 +49,7 @@ export default function MmainTwo() {
 }
 
 const Container = styled.div`
-  height: 100vh;
+  height: 90vh;
   background-color: var(--hover-gray);
 
   .title-box {
@@ -110,7 +110,7 @@ const Container = styled.div`
     opacity: 0;
     will-change: transform, scale, opacity;
     transform: translateY(6rem) scale(0.93);
-    transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   [data-scroll="in"] {
