@@ -15,26 +15,29 @@ export default function M_Header() {
   return (
     <Container>
       <div className="menu-bar">
-        <div className="menu-content">
-          <div>
-            <IoHomeSharp className="menu-icon" />
+        <Link to="/Recipe">
+          <div className="menu-content">
+            <div>
+              <FaPizzaSlice className="menu-icon" />
+            </div>
+            <div>레시피광장</div>
           </div>
-          <Link to="/">
-            <div>홈</div>
-          </Link>
-        </div>
-        <div className="menu-content">
-          <div>
-            <FaPizzaSlice className="menu-icon" />
-          </div>
-          <div>레시피광장</div>
-        </div>
+        </Link>
+
         <div className="menu-content">
           <div>
             <FaBookReader className="menu-icon" />
           </div>
           <div>쿡클래스</div>
         </div>
+        <Link to="/">
+          <div className="menu-content">
+            <div>
+              <IoHomeSharp className="menu-icon" />
+            </div>
+            <div>홈화면</div>
+          </div>
+        </Link>
         <div className="menu-content">
           <div>
             <FaShoppingCart className="menu-icon" />
