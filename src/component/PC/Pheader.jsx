@@ -18,9 +18,14 @@ export default function P_Header() {
   return (
     <Container toggle={toggle.toString()}>
       <nav className="wrapper">
-        <img src={Logo} alt="로고" className="Logo-icon" />
+        <Link to="/">
+          <img src={Logo} alt="로고" className="Logo-icon" />
+        </Link>
         <ul className="header-menu-box">
-          <li className="header-menu">레시피광장</li>
+          <Link to="/Recipe">
+            <li className="header-menu">레시피광장</li>
+          </Link>
+
           <li className="header-menu">쿡클래스</li>
           <li className="header-menu">쿡쇼핑</li>
         </ul>

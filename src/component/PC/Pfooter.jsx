@@ -23,7 +23,7 @@ export default function Pfooter() {
           </div>
         </div>
         <div className="copyright">
-          Copyright 2023. 맛남의공간 all rights reserved.
+          Copyright 2024. 맛남의공간 all rights reserved.
         </div>
       </div>
     </Container>
